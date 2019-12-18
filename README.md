@@ -2,4 +2,5 @@
 
 This sample app demonstrates a Carousel Scrolling bug when it used in a horizontal RecyclerView with the height of `wrap_content`.
 
-![Screenshot](https://user-images.githubusercontent.com/24315306/71072086-cb27f200-21a3-11ea-9107-d8a8597b8501.png)
+Here's a gif for the issue:
+![GIF](https://user-images.githubusercontent.com/24315306/71072948-771e0d00-21a5-11ea-9673-0e75318c1bba.gif)

@@ -13,7 +13,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        simpleRecyclerView.withModels {
+        wrapContentRv.withModels {
+            cuteAnimals
+                .map { cuteAnimal ->
+                    CarouselItemModelModel_()
+                        .id(cuteAnimal)
+                        .textContent(cuteAnimal)
+                }
+                .let { cuteAnimalModels ->
+                    carousel {
+                        id("carousel")
+                        models(cuteAnimalModels)
+                    }
+                }
+        }
+
+        matchConstraintRv.withModels {
             cuteAnimals
                 .map { cuteAnimal ->
                     CarouselItemModelModel_()
